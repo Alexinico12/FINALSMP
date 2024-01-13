@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="1029.0" styleClass="inv-pane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.LaTaCodes.InventoryController">
+   <children>
+      <ImageView fitHeight="42.0" fitWidth="86.0" layoutX="564.0" layoutY="459.0" pickOnBounds="true">
+         <image>
+            <Image url="@jp-button-border.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="42.0" fitWidth="83.0" layoutX="107.0" layoutY="392.0" pickOnBounds="true">
+         <image>
+            <Image url="@jp-button-border.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="42.0" fitWidth="116.0" layoutX="18.0" layoutY="517.0" pickOnBounds="true">
+         <image>
+            <Image url="@jp-button-border.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="42.0" fitWidth="54.0" layoutX="940.0" layoutY="30.0" pickOnBounds="true">
+         <image>
+            <Image url="@jp-button-border.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="42.0" fitWidth="65.0" layoutX="299.0" layoutY="30.0" pickOnBounds="true">
+         <image>
+            <Image url="@jp-button-border.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="42.0" fitWidth="80.0" layoutX="319.0" layoutY="459.0" pickOnBounds="true">
+         <image>
+            <Image url="@jp-button-border.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="42.0" fitWidth="124.0" layoutX="421.0" layoutY="459.0" pickOnBounds="true">
+         <image>
+            <Image url="@jp-button-border.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="42.0" fitWidth="79.0" layoutX="192.0" layoutY="459.0" pickOnBounds="true">
+         <image>
+            <Image url="@jp-button-border.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="42.0" fitWidth="86.0" layoutX="805.0" layoutY="459.0" pickOnBounds="true">
+         <image>
+            <Image url="@jp-button-border.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="42.0" fitWidth="95.0" layoutX="908.0" layoutY="459.0" pickOnBounds="true">
+         <image>
+            <Image url="@jp-button-border.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="21.0" layoutY="85.0" styleClass="inv-labels" stylesheets="@style.css" text="SKU:">
+         <font>
+            <Font name="Yu Gothic Medium" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="134.0" prefHeight="22.0" prefWidth="78.0" styleClass="inv-labels" stylesheets="@style.css" text="Name:" wrapText="true">
+         <font>
+            <Font name="Yu Gothic Medium" size="18.0" />
+         </font></Label>
+      <Label layoutX="21.0" layoutY="187.0" styleClass="inv-labels" stylesheets="@style.css" text="Category:">
+         <font>
+            <Font name="Yu Gothic Medium" size="18.0" />
+         </font></Label>
+      <Label layoutX="21.0" layoutY="236.0" styleClass="inv-labels" stylesheets="@style.css" text="Brand:" textFill="WHITE">
+         <font>
+            <Font name="Yu Gothic Medium" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="285.0" styleClass="inv-labels" stylesheets="@style.css" text="Amount:">
+         <font>
+            <Font name="Yu Gothic Medium" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="328.0" styleClass="inv-labels" stylesheets="@style.css" text="Type/Description:">
+         <font>
+            <Font name="Yu Gothic Medium" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="srchField" layoutX="692.0" layoutY="38.0" prefHeight="26.0" prefWidth="248.0" promptText="Search..." styleClass="text-field" stylesheets="@style.css" />
+      <TextField fx:id="skuField" layoutX="120.0" layoutY="83.0" styleClass="text-field" stylesheets="@style.css" />
+      <TextField fx:id="nameField" layoutX="120.0" layoutY="132.0" styleClass="text-field" stylesheets="@style.css" />
+      <TextField fx:id="categField" layoutX="120.0" layoutY="185.0" styleClass="text-field" stylesheets="@style.css" />
+      <TextField fx:id="brandField" layoutX="120.0" layoutY="235.0" styleClass="text-field" stylesheets="@style.css">
+         <font>
+            <Font name="Yu Gothic Regular" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="csvfileField" layoutX="21.0" layoutY="467.0" prefHeight="26.0" prefWidth="161.0" promptText="Enter .csv filename" styleClass="text-field" stylesheets="@style.css" />
+      <TextField fx:id="amtField" layoutX="120.0" layoutY="283.0" prefHeight="25.0" prefWidth="54.0" styleClass="text-field" stylesheets="@style.css" />
+      <ComboBox fx:id="unitBox" layoutX="188.0" layoutY="283.0" prefHeight="25.0" prefWidth="80.0" styleClass="amtbox-base" stylesheets="@style.css" />
+      <TextField fx:id="typedescField" layoutX="22.0" layoutY="359.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="248.0" styleClass="text-field" stylesheets="@style.css" />
+      <Button layoutX="114.0" layoutY="399.0" mnemonicParsing="false" onAction="#onClear" prefHeight="26.0" prefWidth="67.0" styleClass="clear" stylesheets="@style.css" text="Clear" />
+      <Button fx:id="AddItem" layoutX="326.0" layoutY="466.0" mnemonicParsing="false" onAction="#onAddItem" styleClass="add-item" stylesheets="@style.css" text="Add Item" />
+      <Button fx:id="AddStock" layoutX="572.0" layoutY="466.0" mnemonicParsing="false" onAction="#onAddStock" styleClass="add-stockSKU" stylesheets="@style.css" text="Add Stock" />
+      <Button fx:id="AddStockSKU" layoutX="432.0" layoutY="466.0" mnemonicParsing="false" onAction="#onAddStockSKU" styleClass="add-stockSKU" stylesheets="@style.css" text="Add Stock (SKU)" />
+      <Button fx:id="UseStock" layoutX="814.0" layoutY="466.0" mnemonicParsing="false" onAction="#onUseStock" styleClass="use-stock" stylesheets="@style.css" text="Use Stock" />
+      <Button fx:id="DeleteItem" layoutX="916.0" layoutY="466.0" mnemonicParsing="false" onAction="#onDelete" styleClass="delete-item" stylesheets="@style.css" text="Delete Item" />
+      <Button layoutX="28.0" layoutY="524.0" mnemonicParsing="false" onAction="#onInventoryClose" prefHeight="26.0" prefWidth="95.0" styleClass="back-to-home-button" stylesheets="@style.css" text="Back to Home" />
+      <Button fx:id="BulkAdd" layoutX="199.0" layoutY="466.0" mnemonicParsing="false" onAction="#onBulkAdd" styleClass="bulk-add" stylesheets="@style.css" text="Bulk Add" />
+      <AnchorPane fx:id="invPane" layoutX="299.0" layoutY="82.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="340.0" prefWidth="700.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="218.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true" />
+         </children></AnchorPane>
+      <ImageView fitHeight="107.0" fitWidth="165.0" layoutX="66.0" layoutY="-11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo_twoshadeslighter.png" />
+         </image></ImageView>
+      <Button layoutX="946.0" layoutY="37.0" mnemonicParsing="false" onAction="#onSrchItem" prefHeight="27.0" prefWidth="42.0" styleClass="search" stylesheets="@style.css" text="🔍" />
+      <ImageView fitHeight="42.0" fitWidth="124.0" layoutX="667.0" layoutY="459.0" pickOnBounds="true">
+         <image>
+            <Image url="@jp-button-border.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="UseStockSKU" layoutX="678.0" layoutY="466.0" mnemonicParsing="false" onAction="#onUseStockSKU" prefHeight="26.0" prefWidth="102.0" styleClass="add-stockSKU" stylesheets="@style.css" text="Use Stock (SKU)" />
+      <Label layoutX="748.0" layoutY="529.0" styleClass="inv-labels" stylesheets="@style.css" text="© 2023 Rogori. All Rights Reserved.">
+         <font>
+            <Font name="Yu Gothic Medium" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="306.0" layoutY="38.0" mnemonicParsing="false" onAction="#exportCSV" styleClass="add-item" stylesheets="@style.css" text="Export" />
+   </children>
+</AnchorPane>

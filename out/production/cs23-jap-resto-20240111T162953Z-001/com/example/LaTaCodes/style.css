@@ -1,0 +1,173 @@
+/*
+SYNTAX:
+.class-name{
+	property1:value1;
+	property2:value2;
+}
+
+NOTE:
+	1. class names can be existing elements
+	    - this means all elements will follow that style
+	2. class names can be programmer-defined
+	    - programmer-defined class names will be assigned to certain
+          elements and those elements will follow that style
+*/
+
+/*----------------TABPANE-----------------*/
+.tab{
+    -fx-background-color: #70333A;
+    -fx-alignment: CENTER;
+    -fx-padding: 10 27.5 10 27.4;
+    -fx-text-base-color: #eae0d5;
+}
+
+.tab:hover{
+    -fx-background-color: #9A4750;
+}
+
+.tab:selected{
+    -fx-background-color: #eae0d5;
+    -fx-text-base-color: #9f4a54;
+}
+
+.tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator {-fx-border-color: transparent}
+
+/*----------------BUTTON-----------------*/
+.add-item{
+    -fx-background-color: #9f4a54;
+    -fx-text-fill: #eae0d5;
+}
+
+.add-item:hover{
+    -fx-background-color: #d6c3ae;
+    -fx-text-fill: #9f4a54;
+}
+
+.add-stockSKU{
+    -fx-background-color: #9f4a54;
+    -fx-text-fill: #eae0d5;
+}
+
+.add-stockSKU:hover{
+    -fx-background-color: #d6c3ae;
+    -fx-text-fill: #9f4a54;
+}
+
+.bulk-add{
+    -fx-background-color: #9f4a54;
+    -fx-text-fill: #eae0d5;
+}
+
+.bulk-add:hover{
+    -fx-background-color: #d6c3ae;
+    -fx-text-fill: #9f4a54;
+}
+
+.use-stock{
+    -fx-background-color: #9f4a54;
+    -fx-text-fill: #eae0d5;
+}
+
+.use-stock:hover{
+    -fx-background-color: #d6c3ae;
+    -fx-text-fill: #9f4a54;
+}
+
+.delete-item{
+    -fx-background-color: #9f4a54;
+    -fx-text-fill: #eae0d5;
+}
+
+.delete-item:hover{
+    -fx-background-color: #d6c3ae;
+    -fx-text-fill: #9f4a54;
+}
+
+.search{
+    -fx-background-color: #9f4a54;
+    -fx-text-fill: #eae0d5;
+}
+
+.search:hover{
+    -fx-background-color: #d6c3ae;
+    -fx-text-fill: #9f4a54;
+}
+
+.clear{
+    -fx-background-color: #9f4a54;
+    -fx-text-fill: #eae0d5;
+}
+
+.clear:hover{
+    -fx-background-color: #d6c3ae;
+    -fx-text-fill: #9f4a54;
+}
+
+.menu-button{
+    -fx-background-color:#F3CBC5 ;
+    -fx-text-fill: #EE586F;
+}
+
+.menu-button:hover{
+    -fx-background-color:#EE586F ;
+    -fx-text-fill: #F3CBC5;
+}
+
+.back-to-home-button{
+    -fx-background-color: #9f4a54;
+    -fx-text-fill: #eae0d5;
+
+}
+
+.back-to-home-button:hover{
+    -fx-background-color: #d6c3ae;
+    -fx-text-fill: #9f4a54;
+}
+
+
+/*----------------ANCHORPANE-----------------*/
+.home-pane{
+    -fx-background-color: #604343;
+}
+
+.inv-pane{
+    -fx-background-color:  #eae0d5;
+}
+
+/*----------------LABELS-----------------*/
+.inv-labels{
+    -fx-text-fill: #22333b;
+}
+
+/*----------------COMBOBOX-----------------*/
+.amtbox-base{
+    -fx-background-color: #9f4a54;
+}
+
+.amtbox-base .list-cell:selected{
+    -fx-text-fill: #eae0d5;
+}
+
+.amtbox-base:hover{
+    -fx-background-color: #5d2629;
+}
+
+/*----------------TABLE-----------------*/
+.table-view .column-header {
+    -fx-background-color: #9f4a54;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #eae0d5;
+}
+
+.table-view .scroll-bar .thumb {
+    -fx-background-color: #9f4a54;
+}
+
+/*----------------TEXTFIELDS-----------------*/
+.text-field{
+-fx-background-color: #d6c3ae;
+-fx-text-fill: white;
+-fx-prompt-text-fill: white;
+}
